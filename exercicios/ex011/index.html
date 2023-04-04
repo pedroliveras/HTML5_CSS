@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+ <H1>Imagens Dinâmicas</H1>
+ <p>Tente abrir esse site em diversos dispositivos ou simplesmente redimensione o tamanho do navegador</p>
+
+ <picture>
+    <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+   <img src="imagens/foto-g.png" alt="imagem flexivel">
+
+ </picture>
+    
+
+ <h1>Reproduzindo audios</h1>
+ <p>inserindo audios no site</p>
+  <audio src="midia/exciter.mp3" controls autoplay></audio> inserir player 
+
+
+<!--  <audio preload="auto" autoplay>
+<source src="midia/exciter.mp3" type="audio/mpeg">
+<source src="midia/11 Living Bad Dreams.wav" type="audio/wav">
+<p>infelizmente seu navegador não suporta audio. baixe ele AQUI</p>
+--> 
+
+</audio>
+
+
+</body>
+</html>

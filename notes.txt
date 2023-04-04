@@ -1,0 +1,80 @@
+nOvo curso HTML 13/02/23
+
+.repositorio publico 
+github.com/gustavoguanabara
+gustavoguanabara.github.io
+github.com/gustavoguanabara/html-css
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05/08/22
+
+	.PHp
+
+necessidade concluir curso HTML 
+
+museum.php.ne
+
+
+
+	.HTML 5
+CSS 3
+JAVASCRIPT
+
+DOWNLOADS
+https://www.jetbrains.com/webstorm/download/
+https://www.sublimetext.com/2
+https://notepad-plus-plus.org/downloads/
+http://brackets.io/
+https://github.com/brackets-cont/brackets/releases
+
+
+https://www.cursoemvideo.com/wp-content/uploads/2019/09/curso-html5-pacote01.zip
+https://www.cursoemvideo.com/wp-content/uploads/2019/09/curso-html5-pacote02.zip
+
+<br/> quebra de linha
+&nbsp; espaço
+<wbr/> pular palavras para proxima linha sem hifen
+&shy; pular palavras para proxima linha com hifen
+
+simbolos especiais    
+&lt; menor que 
+	
+&gt; maior que
+letra acima e letra abaixo <p> x<sup>2</sup> e H<sub>2</sub>O </p>
+
+
+<code> exibit código
+<pre> considerar linhas,espaços, etc no html conforme no texto do parágrafo 
+
+background-image:url("background_2.jpg"); colocar imagem de fundo na mesma pasta do html
+background-color: rgb(167,204,242);
+
+
+text-transform:uppercase; transformar todo texto em capslock
+
+
+margin:-10px auto 0px auto; margens cima/direita/baixo/esquerda

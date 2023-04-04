@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@font-face{
+    font-family: idroid;
+    src: url('fontes/idroid.otf') format(truetype);
+}
+
+a.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    padding: 2px;
+    margin: 10px;
+}
+a.menu:hover{
+    background-color: rgb(21, 158, 39);
+}
+a.link{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+a.link::after{
+    font-size: small;
+    content: ' 🔗' ;
+    color:darkgray;
+}
+
+#titulo{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 3px 3px 2px grey;
+margin: 0px;
+padding: 10px;
+}
+
+.cabecalho{
+    color: white;
+    text-align: center;
+    font-family:  Arial, Helvetica, sans-serif;
+    width: 430px;
+    margin:auto;
+    text-shadow: 1px 1px 1px grey;
+    padding: 10px 10px 40px 10px;
+}
+header{
+    color: white;
+    background-image: linear-gradient(to top,rgb(1, 88, 1), green,rgb(2, 182, 2), rgb(2, 206, 2)) ;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(132, 225, 173);
+    margin:0px;
+}
+
+main{
+    background-color: white;
+    margin:0px 100px 5px 100px;
+    padding:10px;
+    box-shadow: 0px 1px 8px black;
+    border-radius: 0px 0px 5px 5px;
+    /*width: 900px;*/
+}
+
+article{
+
+    background-color: rgb(197,235,214);
+    margin: 0px;
+    padding: 5px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 2px 2px 4px black;
+
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    padding:10px;
+    margin: 0px;
+    box-shadow: 2px 2px 4px black;
+
+}
+
+h1.titulo{
+
+    font-family: idroid ;
+    color: rgb(1, 110, 1);
+}
+
+p{
+    font-family:  Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+
+}
+p.caixa{
+    font-family:  Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    margin:0px;
+
+}
+span{
+
+    font-weight: bold;
+    color: green;
+}
+
+h2.subtitulo{
+
+    font-family: idroid ;
+    background-image: linear-gradient(to right, rgb(132, 225, 172), white);
+    color: rgb(1, 110, 1);
+}
+
+footer{
+    font-size: small;
+    background-color: green;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    text-align: center;
+    padding: 2px;
+}

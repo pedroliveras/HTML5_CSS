@@ -1,0 +1,1013 @@
+04/04/23
+
+inicio modulo 3 HTML E css
+
+VERSIONAMENTO DE SOFTWARE
+
+GITHUB
+
+GIT -gerenciamento de versões. guarda versões dos sites/programas para rollback. repositorio local
+GITHUB - hospedar os códigos online.  repositorio remoto
+
+
+instalar o git e o github
+
+
+
+==================================================
+acompanhamento da execução do projeto D0010 
+
+
+position: absolute; é possivel alterar as configs top e left
+
+tornando IFRAME DO VIDEO RESPONSIVO
+ex
+div.video{
+    padding: 20px;
+    margin: 0px -30px 30px -30px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+
+ex:
+div.video>iframe{
+position: absolute;
+top:5%;
+left:5%;
+width:90% ;
+height:90% ;
+
+
+fim do projeto D0010
+
+==============================================
+
+
+
+03/04/23
+acompanhamento da execução do projeto D0010 
+
+NAV
+transition-duration: 1s; > transição do efeito ao passar o mouse e  ao carregar o menu
+
+MAIN P{ - aplica a todos os niveis mesm odentr ode outras tags 
+
+
+
+ line-height: 1em; >para zerar o espaço entre a linha de baixo e de cima. açtira entre linhas
+
+
+aside >ul{ 
+
+    list-style-position: inside; >>inserir os marcadores (disc) dentro da lista
+    columns:2; >>dividir lista em 2 colunas
+    list-style-type: '\2714'; trocar o icone da lista por  um icone personalizado (com o código depois do U+) 
+                      '\2714\00A0'; com espaço ( caractere NBSP) apos o caractere >>>>ESTE COMANDO NAO É COMPATIVEL COM TODO NAVEGADOR
+}
+
+
+
+margin: -10px -10px 0px -10px; margem "vazando" para fora. ex: para se combinar com outro componente
+
+
+ORGANIZAÇÃO DE CONTEUDO DE VIDEO - TORNANDO RESPOONSIVO
+
+
+
+
+
+31/03/23
+acompanhamento da execução do projeto D0010 
+
+PARA FONTES, CASO TENHA FONTE INTERNA E EXTERNA, USAR SEMPRE O @IMPORT ANTES DO FONT FACE
+
+
+
+VARIÁVEIS EM CSS
+
+
+:root{
+    
+}
+ex
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+}
+
+RESPONSIVIDADE 
+
+complemento chrome window resize
+
+main img{
+
+    width: 100%; >imagens ocupam 100% da largura da pagina
+}
+
+
+main img.pequena{  > diminuir e centralizar uma imagem
+width: 50%;
+display: block;
+margin:auto;
+
+}
+
+
+
+30/03/23
+acompanhamento da execução do projeto D0010
+ 
+
+
+
+29/03/23
+CONSLUSÃO DO DESAFIO D010
+
+acompanhamento da execução do projeto D0010 e possiveis correções no meu código
+
+
+PLANEJAMENTO DE SITE
+>https://mockflow.com/
+desenha mocks para criar wireframe de sites
+
+
+
+LARGURA MINIMA E LARGURA MÁXIMA . para usar no main, por exemplo. quando diminui a tela deixa de usar a margem
+
+EX:
+    min-width:400px ;
+    max-width: 800px;
+
+
+VIDEO MINUTO 8
+
+
+28/03/23
+
+DESAFIO D10
+
+PASSAR A LIMPO ATÉ O DIA 27/03 - OK
+
+BORDAS DE IMAGNES DECORADAS/PERSONALIZADAS
+
+        border-image-source: url('borda.png');
+        border-image-slice: 27;
+        border-image-repeat:repeat;
+ 
+
+
+27/03/23
+VERTICES ARREDONDADOS DAS CAIXAS =- CHECAR DIA 14 DE MARÇO
+
+border-radius: com 4 medias, para cada canto 
+
+criar uma forma redonda em CSS
+div#bola{
+
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+
+SOMBRA EM CAIXAS
+box-shadow: 1px 1px 1px BLACK;
+(desloc hor, desloc ver, espalha sombra)
+
+    box-shadow : inset 1px 1px 5px grey; >sombra dentro do elemento
+
+
+
+GROUPING TAGS HTML 5
+
+
+tags de agrupamento - DIV(caixa box level) SPAN(caixa inline level)
+
+HEADER usa NAV dentro (menu)
+MAIN usa SECTION dentro usa ARTICLE DENTRO
+
+
+<body>
+    <header>
+        <nav>
+         <a href="#">LINK</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+        </section>
+        <section id="noticias">
+
+            <article>
+                <h2>Noticias</h2>
+                <p>aaaaaa</p>
+                <aside>
+                    <p>artigo escrito por Rob</p>
+                </aside>
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer>
+
+        <p>desenvolvido por Pedro Oliveras Giangrande</p>
+    </footer>
+    
+</body>
+
+
+
+
+
+24/03/23
+CONFIG MARGIN E COMANDOS SIMPLIFICADOS
+
+margin: auto; centralizar a margem da caixa. se for texto comum, basta texto align:center;
+
+outline : entre a borda e a margem
+            outline-width:5px ;
+            outline-style: dashed;
+            outline-color: coral;
+
+comandos simplificados border, padding, margin, outline
+
+border (width style color)
+ex:
+ border: 10px solid darkblue;
+
+
+padding (top right bottom left)
+ex:
+ padding: 10px 10px 10px 10px;
+OU
+padding :10px; > todos ods lados serão das mesmas medidas, não sendo necessário a repetição
+
+
+margin (top right bottom left)
+ex
+margin:20px 20px 40px 20px;
+centralizar a margem da esquerda e da direita>> margin: 20px auto 40px auto;
+
+
+outline(width style color)
+ex
+  outline:5px dashed coral;
+
+
+TRANSFORMAR BOX LEVEL (H1, P, etc ) EM ELEMENTO INLINE
+display: inline;
+
+TRANSFORMAR ELEMENTO INLINE (a, ETC) EM BOX LEVEL
+display:block;   >link toma a linha inteira
+
+
+
+
+23/03/23
+
+PSEUDO ELEMENTOS CONT 
+passar anotações das classes , pseudo classes e peudo elementos papel ok
+
+
+
+MODELO DE CAIXAS "BOX MODEL"
+
+UMA CAIXA DENTRO DA OUTRA aninhamento
+propriedades que podem ser justadas do H1, por exemplo:
+
+altura-height
+largura width
+borda-border 
+preenchimento-padding - espaço interno (top, bottom, left, right) - dar preferencia para as configurações na ordem horaria
+margem - margin - espaço externo (top,right,bottom,left)sentido horario o correto (para os objetos não se sobreporem
+contorno-outline - traçado fora do elemento
+ 
+paragrafos também sao caixas, assim como H1
+
+TIPOS DE CAIXA
+box level- desenha uma caixa ocupando a largura toda da area de tela
+inline level- desenha uma caixa na area especifica
+
+tag DIV - box level = H1, H2, P, video ,header
+tag SPAN - não quebra linha = a, code, small,strong,em,sup,label,select
+
+
+
+
+
+
+22/03/23
+PSEUDO CLASSES CONT...
+
+PSEUDO ELEMENTOS
+palavra chave adicionada ad declarações após :: permite que formate um pedaço específico do elemento referenciado
+ usado com ::
+
+ex:
+a::after{  >insere um texto padrão (ou um caractere especial) após um elemento, no caso o LINK
+        content: '  [link]';
+        font-weight: normal;
+        color: darkgray;
+     }
+
+
+::before  ::after ::first-letter ::first-line
+
+
+
+20/03/2023
+
+
+*termino das anotações até o dia 16
+
+ID COM CSS
+
+<h1 id="principal">
+
+no CSS:
+
+h1#principal{
+
+Em HTML id / em CSS #
+em HTML  class em CSS é .
+
+só se pode ter um elemento com ID no código HTML.
+com classe podem ter varios elementos
+
+
+
+CLASSE
+
+<h2 class="avancado">
+
+no CSS
+.avancado{
+
+
+pode colocar um trecho do texto em uma classe
+ex <span class="basico"> texto </span>
+
+cada atributo pode fazer parte de mais de uma classe
+ex
+<h2 class="avancado destaque">CSS Avançado</h2>
+
+
+PSEUDO CLASSES cap 15 aula 03 - palavra chave adicionada as declarações de uma seletor podendo mudar o estado dele
+ex : : hover :visited :active :checked :empty :focus 
+
+div{  >usado nos MENUS
+
+            background-color: blueviolet;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+
+:  >estado da classe
+ex
+div:hover{
+
+        background-color: yellow;
+
+}
+
+=================
+
+div >p {     associar parágrafo como filho do DIV e o ocultar (usado em dropdown menu)
+
+        display: none;
+    }
+
+ div:hover>p{    mostrar o parágrafo oculto quando passo o mouse
+    display: block;
+    }
+=================
+
+
+17/03/2023
+
+****incluindo as anotações ATÉ O DIA 16/03 no papel
+
+
+16/03/2023
+
+TAMANHO DAS FONTES e MEDIDAS
+
+font-size: 16px ;
+MEDIDAS ABSOLUTAS
+cm, mm, in, *px, pt, pc
+
+MEDIDAS RELATIVAS
+*em, ex, rem, vh, %
+
+*recomendadas
+-16px tamanho normal / = 1 em (tamanho da letra normal. 2em é o dobro de 16 px)
+
+
+PESO DA FONTE
+font-weight: ; > lighter normal bold bolder
+font-style: ; italic normal
+text-decoration:underline;
+
+
+**shorthand font (atalho para as propriedades da fonte, não precisar de varias linhas de declaração)
+ordem: 
+font-style: font-weight > font-size > font-family
+ex:
+font:  italic 20 px sans serif; 
+font: normal 20px Times ;
+
+GOOGLE FONTS
+
+buscar a fonte, adicionar  e clicar em @import
+
+3 ou 4 familias de fonte recomendavel
+
+dafont.com
+
+FONTE LOCAL
+
+opentype (otf)
+truetype (ttf)
+
+@font-face {
+font-family:Iron Maiden ; > nome da fonte no código
+src: url('fonts/maiden.ttf') format(truetype); caminho e formato
+}
+
+**CAPTURAR FONTES SITES
+fonts ninja
+
+**CAPTURAR FONTES DENTRO DE IMAGENS
+whatfontis.com
+fontsquirrel
+myfont.com
+
+
+USO DE ALINHAMENTO DE TEXTO
+
+text-align:center; > right  > justify
+text-indent: 30px; >  espaço inicio parágrafo
+
+
+
+
+15/03/23
+
+TIPOGRAFIA
+
+letra x da fonte(minuscula) serve como base na altira das outras letras minusculas da fonte
+serifa - pequenas guias em cima e embaixo das letras
+familia tipografica - light, normal , bold, extrabold
+sans serif - sem serifa
+
+
+font-family: Arial, Helvetica, sans-serif > 3 combinações de fontes, caso não tenha a primeira, vai para a segunda a terceira
+colocar 3 fontes semelhantes
+CSS web safe font combinations
+
+
+
+
+14/03/23
+
+DEGRADÊ EM CSS
+
+collorzilla( capturar cores chrome)
+
+ background-image: linear-gradient(to right, white 20%,blue); 
+**to right pode usar ângulos ex:  90deg
+
+
+radial-gradient(circle, ...
+
+
+*** CONFIG GLOBAL CSS
+*{
+height: 100%;
+ }
+
+fazer com que o fundo fique fixo mesmo com ROLAMENTO/aumantando/diminuindo a tela -
+background-attachment: fixed;
+
+
+
+main{ >conteudo principal do body
+
+    background-color: white; cor de fundo do main
+    width :900px;  largura do texto principal
+    padding:10px; "folga" para a largura do texto principal
+    margin: auto;  centralizar o texto principal
+    border-radius: 10px; arredondar as arestas do main
+    box-shadow: 5px 5px 15px #01203086; sombra no main
+}
+
+h1{ text-shadow: 1px 1px 2px #011620c2;} sombra no texto
+
+13/03/23
+
+***termino das anotações atéo dia 08/03 no papel
+
+color.adobe.com > montar paleta de cores
+paletton.com  > montar paleta de cores com exemplos aplicados em simulação de  sites
+https://coolors.co/ > sugestões de cores
+
+
+10/03/23
+
+
+
+
+****incluindo as anotações ATÉ O DIA 08/03 no papel
+
+
+
+09/03/23
+HTML INICIO SEGUNDO MÓDULO
+
+CORES
+*conceito de psicologia das cores
+
+representação de cores no HTML
+
+por nome (limitado)
+<H2 style="background-color: blue; color: white;">Exemplo de cores</H2>
+
+por hexadecimal
+  <H2 style="background-color:#0000ffff; color: #ffffff;">Exemplo de cores</H2>
+> 00 vermelho / 00 verde / ff (máximo tom) azul
+
+por RGB
+ <H2 style="background-color: rgb(0, 0,255); color: rgb(255,255,255);"> Exemplo de cores</H2>
+
+por HSL
+hsl(hue, saturation, lightness)
+
+ <H2 style="background-color: hsl(240, 100%, 50%); color: hsl(0,0%, 100%) ; ">Exemplo de cores</H2>
+
+
+HARMONIZAÇÃO DE CORES - cap 13 aula 3
+
+-circulo cromático
+cores primárias=amarelo, vermelho, azul(forma um triangulo no circulo cromatico)
+cores secundárias=laranja, violeta, verde
+cores terciarias - entre uma cor secundária e primaria (tons pasteis)
+
+hemisferio esquerdo c. cromativo traçar antes do amarelo e depois do violeta
+cores frias hemisferio esquerdo/ cores quentes hemisferio direito
+
+paleta de cores usadas recomendado de 3 a 5 cores
+
+cores que mais contrastam(complentares)- o oposto direto no circulo cromatico ex violeta-amarelo
+cores analogas (com harmonia, cores proximas do c. cromatico)
+
+
+
+08/03/23
+
+
+ESTILOS CSS EXTERNOS
+
+<link rel="stylesheet" href="style.css"> arquivo CSS dentro da pasta do HTML
+regra: usar @charset "UTF-8";
+
+é possivel mesmo assim utilizar style para uma pagina apenas
+
+<style>
+texto-decoration:underline; sublinhar
+text-align:right;
+
+</style>
+
+CSS vai prevalecer: INLINE>LOCAL>EXTERNO
+
+
+
+ESTILOS CSS INTERNOS 
+<style> dentro do head de cada html, juntando todos os estilos, de H1,H2,P etc
+ 
+
+
+
+07/03/23
+garimpo cds
+resolução de desafios modulo 1 d0007, d008,d009
+
+
+
+CSS inline (config pontual - um por um)
+
+STYLE
+***definindo o estilo manualmente (não indicado)
+<body style="background-color: rgb(137, 137, 206); ">
+    <h1 style="color: cadetblue;" >Capítulo 1</h1>
+
+justificar parágrafo
+ <p style="text-align: justify;>
+
+
+
+06/03/23
+
+VIDEO
+programa handbrake - converter videos
+
+***hospedagem propria
+
+FORMA SIMPLES <video src="meu-video.mp4" poster="imagens/thumb.JPG" width="500" controls></video>
+
+FORMA PARA EVITAR INCOMPATIBILIDADE ENTRE NAVEGADORES (inserindo varias opções de formato)
+<video width="500" poster="imagens/thumb.JPG" controls autoplay loop>
+      <source src="midia/meu-video.mp4" type="video/mp4">
+          <p>seu navegador não tem compatibilidade com nenhum formato de vídeo</p>
+    </video>
+
+***incorporação de videos externos
+youtube - basta clicar em incorporar e colar o código , que já vem pronto
+
+--
+
+AUDIO modulo 1 cap 11 aula 3
+
+forma 1 <audio src="midia/exciter.mp3" controls autoplay></audio>
+
+
+IMAGENS DINAMICAS
+<picture> usar picture, e dentro a tag source, depois, a imagem a ser carregada
+
+ <picture>
+    <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png"> caso não passe de 750px carrega img pequena
+    <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png"> caso não passe de 1050px carrega a imagem media
+   <img src="imagens/foto-g.png" alt="imagem flexivel"> caso passe de 1050 px , carrega a imagem grande(default)
+
+ </picture>
+
+
+
+02/03/23
+
+LINKS
+
+REL - atributo do link : external- externo / next e prev - para conteudo do proprio site
+
+RETORNAR UM DIRETORIO ../ criar link para um apágina anteior (voltar uma pasta, comando LINUX
+
+DOWNLOAD de um arquivo dentro de uma pasta no servidor do site
+<a href"etiquetas/etiqueta_LAD.zip" download="EtiquetaLAD.pdf" type="application/pdf">baixar o zip aqui</a>
+media types para configurar em TYPE - https://www.iana.org/assignments/media-types/media-types.xhtml
+
+
+
+*****************incluído conteúdo abaixo nas notas escritas
+
+
+
+01/03/23
+LINKS
+<a href="ENDEREÇO WEB ou pagina interna"> </a> abrirá na mesma pag
+<a href="endereço web" target="_blank" rel="external>nome página </a> abrind em uma nova aba
+antes de abri o link avisar o navegador que o site é de outra linguagem <a href="www.ironmaiden.com" hreflang="en"
+ 
+
+
+LISTAS
+OL - ordered list / LI para cada item(fechamento opcional). Parametro type <ol type="A"></ol> para o contador
+UL -Unordered List- type para modelar o parágrafo com a lista <ul type="circle">
+
+DL definition list (FECHAMENTO opcional) - item da lista e a sua definição (como um dicionario <dl></dl>
+<dl>
+  <dt>(definition term) HTML</dt>
+  <dd>(definition description)linguem para criação de site</dd>
+</dl>
+
+
+
+abreviação (siglas)- ABBR - mostrará o significado quando passa o mouse
+citação de um texto grande - BLOCKQUOTE
+Citação - Q
+demosntrar códigos no HTML- CODE
+PRE usar <pre><code> </code></pre> para manter espaçamento
+*VSCODE-  SHIFT+TAB para trazer varias linhas para a esquerda
+BDO - texto com as letras invertidas
+
+
+
+
+28/02/23 HTML
+
+
+SEMANTICA HTML
+
+TEXTO ACIMA -sup
+TEXTO ABAIXO - sub
+SUBLINHAR -  <ins> / <u> (sem semantica) 
+TEXTO RISCADO - <del> (strike era usado anteriormente e foi depreciado)
+BIG - texto grande (OBSOLETO)
+SMALL - texto pequeno
+==================
+ESTILO  -  alterar a cor de todos os marks usando style>
+<style>
+    mark{
+        background-color: rgb(207, 129, 129);
+    }
+</style>
+====================
+
+MARK - marcar texto / <mark style="background-color: lime;"> amarelo - default. customizando com CSS
+
+EM - itálico com semântica
+STRONG - significado importante na frase, usado no lugar do <b> </b>
+**VSCODE - INSERIR TEXTO SELECIONADO EM UMA TAG - CTRL+SHIFT+P - >APP>envolver com abreviação
+
+TAGS obsoletas - https://www.w3.org/TR/2014/REC-html5-20141028/obsolete.html
+<u> sublinhado
+<address> </> endrereço - destaque itálico (significado)
+marquee - <marquee behavior="" direction="right"> </marquee> animação com texto passando na tela - EM DESUSO, USAR JAVASCRIPT  NO LUGAR
+
+
+HIERARQUIA DE TITULOS
+
+ver dia 27/02 H1(principal) até H6(subtitulos) -TITULOS
+VSCODE lorem >gerar texto
+
+
+FAVICON (icone site no browser) formato ico, png ou SVG(vetorizado)
+
+iconArchive >repositorio de arquivos
+favicon.cc > desenhar icone
+favicon.io > transformar qq coisa em icone
+VSCODE. <link favicon > NO CABEÇALHO
+
+IMAGENS
+FERRAMENTA DE MANIPULAÇÃO DE IMAGENS - GIMP
+<img src="CAMINHO IMAGEM" alt="DESCRIÇÃO INTERNA/INDEXAÇÃO">
+VS CODE img + ALT TAB
+
+
+
+27/02/23 HTML
+
+IMAGENS
+fonte de imagens gratuitas UNSPLASH.com, PEXELS.com
+
+
+
+CARACTERES ESPECIAIS
+EMOJI inserir &#x(código em hexadecimal do emoji) ex: &#x1F913;
+
+exibir código com <> no texto &lt; &gt; LESS THAN / GREATER THAN
+<!--COMENTÁRIOS -->
+
+SIGLAS
+BR (break row)- quebra de linha
+HR - (horizontal row - LINHA HORIZONTAL)
+meta  name=viewport - ocupará 100% da tela do dispositivo
+h1- heading (cabeçalho) quanto maior o número , menor o texto
+p - paragrafo
+<p class="destaque"> definir classe ao paragrafo (ou titulo) para ser manipulado mais tarde
+title(texto na aba do navegador, titulo da pagina)
+head  - cabeçalho
+body - corpo
+bgcolor (usar dentro do <body> ) - mudar a cor do fundo
+texto-decoration:underline; sublinhar
+
+
+VISUAL STUDIO CODE
+instalado addons de javascript, php. 
+
+
+++++++++++++++++++++++++++++++
+front-end - roda do lado do cliente (client side ,parte visual e interativa, HTML , CSS JAVASCRIPT)
+back-end - roda do lado do servidor (server side - PHP , javascript(node), C sharp, Phyton, Ruby, Java)
+full-stack CONHECIMENTO DOS DOIS LADOS
+
+
+++++++++++++++++++++++++++++++
+
+html - conteudo
+css - desing
+
+sintaxe
+titulo <h1> TITULO </h1>
+
+PARAGRAFO <p> paragrafo</p>
+
+<img src="foto.png" alt="exemplo de foto">
+
+CSS
+h1{
+font family:arial;
+font-size:20pt;
+color:blue;
+}
+
+***ESTRUTURA
+<!D0CTYPE html>
+<html lang="pt-br">
+    <head>   *CABEÇALHO
+        <meta charset="UTF-8"> *CODIFICAÇÃO COMPATIBILIDADE C/ ACENTUAÇÃO 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> *ABRIR O SITE COM 100% DA TELA COM COM ZOOM
+
+    <title>documento</title>
+    </head>
+    <body> *CORPO
+         <h1>Olá</h1>
+    </body>
+</html>
+
++++++++++++++++++++++++++++++++
+
+capitulo 2
+1 c
+2 b
+3 d 
+4 a 
+5 c
+6 b
+7 d 
+8 c
+9 a 
+10 d 
+
+
+
+
+ 24/02/23 HTML
+teoria internet
+www.submarinecablemap.com
+UTF8
+ARMAZENAMENTO megaBYTE (MB)
+TRANSMISSÃO megaBIT (Mb)
+https://www.iplocation.net/ip-lookup
+TLD = top level domain (.com .gov) CCTLD =codigo de país ( .br . us)
+
+
+
+
+
+
+
+24/02/23 HTML
+apostilas e materiais de referencia
+https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf
+
+https://developer.mozilla.org/
+https://www.w3.org/standards/webdesign/
+https://html.spec.whatwg.org/
+https://www.w3schools.com/
+
+
+  
+livros
+==================> mais proximo dos manuais de referencia
+HTML5 o relly- mark pilgrim
+
+CSS o relly- Eric Meyer
+
+FLEXBOX IN CSS o relly- Estelle Weyl
+
+GRID LAYOUT IN CSS o relly- eric meyer
+======================
+
+
+HTML5 e CSS3 - alta books - elizabeth castro bruce hyslop
+
+
+HTML & CSS ALTA BOOKS John Ducket
+
+
+HTML e CSS - use a cabeça-  alta books elizabeth robson e eric freeman (iniciantes, jovem)
+
+crie seu proprio site nate cooper (jovem)
+
+========================
+
+HTML5 
+HTML5 e CSS3
+css E grid layout 
+mauricio samy silva - novatec
+
+=================
+
+DESIGN
+
+curso de design grafico  David Dadner e outros -GG
+
+design bob e maggie gordon - senac
+
+psicologia das cores-  eva heller - gg
+
+pensar com tipos ellen lupton GG
+
+
+
+
+===========>LIVROS DIGITAIS
+
+flexbox explained - jorge montoya e stephen burge - OSTraining
+
+CSS GRID EXPLAINED jorge montoya e stephen burge - OSTraining
+
+================
+
+HTML 5 - Bill sanders - bookman
+
+CSS - ERIC meyer bookman 
+
+
+
+
+
+nOvo curso HTML 13/02/23
+
+.repositorio publico 
+github.com/gustavoguanabara
+gustavoguanabara.github.io
+github.com/gustavoguanabara/html-css
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05/08/22
+
+	.PHp
+
+necessidade concluir curso HTML 
+
+museum.php.ne
+
+
+
+	.HTML 5
+CSS 3
+JAVASCRIPT
+
+DOWNLOADS
+https://www.jetbrains.com/webstorm/download/
+https://www.sublimetext.com/2
+https://notepad-plus-plus.org/downloads/
+http://brackets.io/
+https://github.com/brackets-cont/brackets/releases
+
+
+https://www.cursoemvideo.com/wp-content/uploads/2019/09/curso-html5-pacote01.zip
+https://www.cursoemvideo.com/wp-content/uploads/2019/09/curso-html5-pacote02.zip
+
+<br/> quebra de linha
+&nbsp; espaço
+<wbr/> pular palavras para proxima linha sem hifen
+&shy; pular palavras para proxima linha com hifen
+
+simbolos especiais    
+&lt; menor que 
+	
+&gt; maior que
+letra acima e letra abaixo <p> x<sup>2</sup> e H<sub>2</sub>O </p>
+
+
+<code> exibit código
+<pre> considerar linhas,espaços, etc no html conforme no texto do parágrafo 
+
+background-image:url("background_2.jpg"); colocar imagem de fundo na mesma pasta do html
+background-color: rgb(167,204,242);
+
+
+text-transform:uppercase; transformar todo texto em capslock
+
+
+margin:-10px auto 0px auto; margens cima/direita/baixo/esquerda
