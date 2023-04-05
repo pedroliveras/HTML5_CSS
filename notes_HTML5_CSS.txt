@@ -1,3 +1,10 @@
+05/04/23
+
+repositorios github
+
+
+
+
 04/04/23
 
 inicio modulo 3 HTML E css
@@ -12,7 +19,8 @@ GITHUB - hospedar os códigos online.  repositorio remoto
 
 instalar o git e o github
 
-
+https://github.com/pedroliveras
+https://github.com/pedroliveras/HTML5_CSS
 
 ==================================================
 acompanhamento da execução do projeto D0010 
