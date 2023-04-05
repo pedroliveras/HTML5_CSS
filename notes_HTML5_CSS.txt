@@ -6,7 +6,8 @@ repositorios github
 GITHUB PAGES
 https://pages.github.com/
 https://pedroliveras.github.io/HTML5_CSS/desafios/D010%20_solucao/
-https://pedroliveras.github.io/projeto--android/index.html
+https://pedroliveras.github.io/projeto--android/
+qrcode generator
 
 
 04/04/23
