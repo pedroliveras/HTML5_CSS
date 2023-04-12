@@ -1,3 +1,68 @@
+11/04/23
+
+CONT. IMAGENS E FUNDO
+
+
+CENTRALIZAÇÃO VERTCAL DE CAIXAS
+
+
+
+10/04/23
+clonando diretorios github
+
+trazer os dados do github para outro pc
+no github desktop - file/accounts/sign in
+
+no githib desktop- file/options/git save
+selecionar o repositorio e ir em clonar
+assistir YOUTUBE como dar mais segurança no git github guanabara
+
+----------------------------------------
+inicio capitulo 19 imagens de fundo HTML
+
+ background-image: url('/imagens/pattern001.png') ;
+ background-size: 200px 100px; >> background-size:100%; (fit na tela)
+>>> :contain; exibir a imagem sem cortes
+>>> :cover; cobrir a tela inteira mesmo que a imagem tenha cortes
+
+ background-attachment: fixed ; >locka o fundo independente do uso do scroll
+
+ background-repeat:no-repeat;
+  > repeat , repeat x , repeat y
+background-position: left top;
+>left center;right bottom;center center; (coluna depois linha)
+
+height: 98vh; ( 98% view height, área visivel)
+
+
+SHORTHAND BACKGROUND IMAGE
+color > image >position> repeat > [size] >attachment;
+[eliminar size pois não funciona. usar background size:cover;]
+
+
+=============================================
+desenhar caixas e inserir imagens
+<style>
+div.quadrado{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(192, 195, 197); >vai ser sobreposta pelo #ID
+  }
+
+ div#q3{
+ background-image: url('imagens/wallpaper002.jpg') ;
+
+ }
+</style>
+
+ <div class="quadrado" id="q3"></div>
+===============================================
+
+
+
 05/04/23
 
 repositorios github
@@ -159,7 +224,7 @@ EX:
     max-width: 800px;
 
 
-VIDEO MINUTO 8
+
 
 
 28/03/23
