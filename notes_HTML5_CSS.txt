@@ -1,9 +1,28 @@
+13/04/23
+
+
+
+
+12/04/23
+CENTRALIZAÇÃO VERTCAL DE CAIXAS
+
+=============================
+container (ex. section)
+position: relative;   (default)
+
+conteudo (ex. article)
+position:absolute;
+left: 50%; centralizar
+top: 50%; centralizar
+transform: translate(-50% ,-50%); mover centralizar corretamente o objeto , pois por default é centralizado na ponta superior esquerda
+ 
+
+================================
 11/04/23
 
-CONT. IMAGENS E FUNDO
+CONT. IMAGENS E FUNDOvh
 
 
-CENTRALIZAÇÃO VERTCAL DE CAIXAS
 
 
 
