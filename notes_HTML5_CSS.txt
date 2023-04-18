@@ -1,10 +1,98 @@
+18/04/23
+CAPTION TABELA(LEGENDA)
+
+
+SCOPE TABELA (usado para mecanismos de biscas para identificar escopo da tabela)
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </tr>
+
+<th scope="row">TOTAL DE HABITANTES</th>
+
+
+EFEITO ZEBRADO TABELAS GRANDES
+
+ tbody>tr:nth-child(2n){   >(2n)--(odd col PAR) (even col IMPAR)
+   background-color: rgb(214, 211, 211);
+
+   }
+
+CABEÇALHO FIXO EM TABELAS GRANDES
+
+table{
+
+    position:relative;
+    
+}
+thead>tr>th{
+
+    position: sticky;
+    top:0;
+    background-color: lightgray;
+    
+}
+
+MESCLAGEM DE CELULAS DE TABELAS
+
+<td colspan="2">B</td> - a informação vai ocupar 2 colunas
+
+ <td rowspan="3">F</td> - a informação vai ocupar 3 LINHAS
+
+17/04/23
+
+min-height: 100vh; >tamanho minimo 100 view height 100% viewport
+font-size: 10vw; tamanho da fonte varia conforme tamanho horizontal janela - 10% view weigth
+
+display: inline-block; colocar fundo nos textos;
+
+text-transform: uppercase; transformar em maiusculas
+font-variant:small-caps; todas em  caps lock mas com as letras iniciais maiores
+
+
 13/04/23
 
+DESAFIO 11 ok
 
+montagem desafio 12 (capitulo20)
+
+
+
+EFEITO PARALLAX
+
+TABELA EM  HTML
+<table>
+
+
+hierarquia de tabela (simples)
+TABLE tabela
+<tr>TABLE ROW= linha de tabela
+<th>TABLE HEADER=cabecalho de tabela
+<td>TABLE DATA= dados de tabela 
+
+  border-collapse: collapse; juntar as bordas > :separate; tabela  com bordas separadas
+
+TR e TD não tem fechamento obrigatório
+
+ALINHAMENTO CONTEUDO CELULAS
+vertical-align: middle; >bottom >top
+alinhamento horizontal :  text-align: center;
+ 
+
+ANATOMIA PARA TABELAS GRANDES
+table
+
+caption <caption>
+
+thead >TR TD TH
+
+tbody >TR TD TH
+
+tfoot >TR TD TH
 
 
 12/04/23
-CENTRALIZAÇÃO VERTCAL DE CAIXAS
+CENTRALIZAÇÃO VERTICAL DE CAIXAS
 
 =============================
 container (ex. section)
