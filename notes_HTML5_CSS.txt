@@ -1,3 +1,8 @@
+19/04/23
+desafio 14
+
+
+
 18/04/23
 CAPTION TABELA(LEGENDA)
 
@@ -9,6 +14,10 @@ SCOPE TABELA (usado para mecanismos de biscas para identificar escopo da tabela)
         </tr>
 
 <th scope="row">TOTAL DE HABITANTES</th>
+scope="colgroup" para titulo de um grupo de colunas
+
+scope="rowgroup" para titulo com u mgrupo de linhas
+
 
 
 EFEITO ZEBRADO TABELAS GRANDES
@@ -38,6 +47,14 @@ MESCLAGEM DE CELULAS DE TABELAS
 <td colspan="2">B</td> - a informação vai ocupar 2 colunas
 
  <td rowspan="3">F</td> - a informação vai ocupar 3 LINHAS
+
+
+
+
+desafio 13 .1 e .2
+
+
+
 
 17/04/23
 
