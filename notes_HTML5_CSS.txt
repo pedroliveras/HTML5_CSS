@@ -1,5 +1,58 @@
+20/04/23
+
+IFRAME COM CONTEUDO LOCAL
+
+
+NAVEGAÇÃO NO IFRAME
+>>>>>criar links para abrir conteudo no iframe
+
+. <iframe name="frame1" src="">  declarar NAME para o frame
+
+.<a href="paginas-extras/pag001.html" target="frame1">Primeira Pagina</a> </li> 
+
+ <a href="paginas-extras/pag002.html" target="frame1">Segunda Pagina</a> </li>
+..USANDO CAMINHO DA PAGINA A CARREGAR E TARGET C/ NOME DO FRAME DECLARADO
+
+
 19/04/23
+CSS5/CSS3 MODULO 4 
+
+IFRAME - frame inline
+embutir site de terceiros na pagina
+
+
+tamanho padrao 300 largura x 150 altura
+configuração das CSS do iframe PREVALECEM
+
+
+
 desafio 14
+
+AGRUPANDO COLUNAS COLGROUP
+na definição da tabela, "informar" a  qtd de colunas, podendo atribuir a elas classes , para por exemplo marcar uma coluna inteira
+<table>
+        <colgroup>  - 4 colunas na tabela
+            <col>
+            <col class="destaque">
+            <col>
+            <col>
+        </colgroup>
+
+
+        <colgroup> - 4 colunas na tabela
+            <col class="nome">
+            <col class="destaque" span="2">  - é possivel informar varias colunas de uma vez usando span, tendo a mesma propriedade
+            <col>
+        </colgroup>
+
+
+TABELAS RESPONSIVAS
+
+envelopar a tabela (<table>) dentro de uma div
+comando   overflow-x: auto;
+overflow-y; vertical
+overflow-x horizontal;
+criará um scrol NA TABELA
 
 
 
