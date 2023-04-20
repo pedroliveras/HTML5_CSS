@@ -13,6 +13,38 @@ NAVEGAÇÃO NO IFRAME
  <a href="paginas-extras/pag002.html" target="frame1">Segunda Pagina</a> </li>
 ..USANDO CAMINHO DA PAGINA A CARREGAR E TARGET C/ NOME DO FRAME DECLARADO
 
+USANDO CÓDIGO INTERNO NO IFRAME AO CARREGAR
+ <iframe name="frame1" srcdoc=" <h1>escolha uma das opções acima</h1> <img src='imagens/IMG_9949_2.jpg'>
+        ">  
+-SRCDOC" CODIGOS HTML "
+
+=========================================IFRAME AVANÇADO | CAP 22 AULA 6
+INCONVENIENTES DO IFRAME
+
+possibilidade invasão
+
+TORNANDO IFRAMES MAIS SEGUROS
+
+
+ <iframe src="paginas-extras/pag004.html" sandbox="sandbox"> 
+comando sandbox- bloqeia acesso de outros sites
+sandbox="allow-same origin allow-forms allow-scripts"; >permitindo as ações dentro do iframe com o sandbox
+
+
+IFRAMES COM JAVASCRIPT
+é perigoso deixar liberado no iframe sites execuratem scripts
+<iframe src="paginas-extras/pag005.html" referrerpolicy="no-referer" sandbox="sandbox"></iframe>
+======bloqueando tudo
+
+<iframe src="paginas-extras/pag005.html" referrerpolicy="no-referer" sandbox="allow-scripts"></iframe>
+=======liberando apenas scripts || referrerpolicy="no-referer" > não permite a obtenção de dados
+
+
+
+
+
+
+
 
 19/04/23
 CSS5/CSS3 MODULO 4 
@@ -23,6 +55,8 @@ embutir site de terceiros na pagina
 
 tamanho padrao 300 largura x 150 altura
 configuração das CSS do iframe PREVALECEM
+ 	display: block; 
+        margin:auto; centralizar iframe
 
 
 
