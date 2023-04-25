@@ -1,3 +1,32 @@
+25/04
+mini projeto HTML CSS rede social
+
+
+section#redes-sociais img:hover{
+    border: 2px solid white;
+    box-sizing: border-box;
+} >para não mudar o tamanho da caixa no hover, a borda fica no interior da caixa(botão)
+
+
+
+::-webkit-scrollbar{
+            width: 0px;
+            height: 0px;
+>>comando para alterar a scrollbar        }
+
+
+
+24/04/23
+mini projeto HTML CSS rede social
+
+
+
+
+
+
+
+
+
 20/04/23
 
 IFRAME COM CONTEUDO LOCAL
@@ -40,6 +69,8 @@ IFRAMES COM JAVASCRIPT
 =======liberando apenas scripts || referrerpolicy="no-referer" > não permite a obtenção de dados
 
 
+
+PROJETO "REDE SOCIAL" (IFRAME) CAP 23
 
 
 
