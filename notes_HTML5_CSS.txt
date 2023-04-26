@@ -1,3 +1,34 @@
+26/04/23
+
+
+
+METODO GET E POST PARA FORMULARIOS
+
+método GET é o padrão(se não declarar será GET)
+
+POST esconde os dados do form da URL, mas fica exposto da mesma forma
+
+GET-quando os dados não forem sensiveis - até 3 mil bytes
+
+
+CAIXAS DE TEXTO COM SENHAS PARA FORM
+
+ <input type="password" name="sen" id="isen">
+
+ATRIBUTO DO INPUT
+required - campo obrigatorio
+minlength="5" maxlength="15" minimo e maximo permitido no campo
+size="15" tamanho caixa
+placeholder="nome" - preencher a caixa com dica da informação
+autocomplete="username"> - ativar autopreenchimento do tipo do campo correto
+>>autocomplete="current-password"
+>>autocomplete="new-password"
+
+ <input type="password" name="sen" id="isen" required minlength="8" maxlength="15">
+
+
+
+
 25/04
 mini projeto HTML CSS rede social
 
@@ -12,7 +43,52 @@ section#redes-sociais img:hover{
 ::-webkit-scrollbar{
             width: 0px;
             height: 0px;
->>comando para alterar a scrollbar        }
+>>comando para alterar a scrollbar     
+===========================================
+
+
+
+formularios HTML
+
+
+FORMULARIO BASICO
+
+<form>
+	<p>nome: <input type="text" name="nome" id="nome"></p>
+	<input type="submit" value="ENVIAR">
+</form>
+
+
+DESLIGAR SUGESTOES DO FORM
+<form autocomplete="OFF">
+
+
+<form action=""></form> 
+-action, chama a função para onde vai enviar os dados preenchidos(ex:PHP)
+
+
+
+LABEL do FORM
+
+usar LABEL para cada campo, que aponta para  o ID do elemento
+
+
+ <label for="inome">nome:</label> <input type="text" name="nome" id="inome">
+
+
+ <form action="cadastro.php" autocomplete="OFF">
+        <p>
+            <label for="inome">nome:</label> <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobronome">sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <input type="submit" value="ENVIAR">
+
+ </form>
+
+
+
 
 
 
@@ -1259,6 +1335,9 @@ nOvo curso HTML 13/02/23
 github.com/gustavoguanabara
 gustavoguanabara.github.io
 github.com/gustavoguanabara/html-css
+
+AULAS HTML ATUALIZADO
+https://github.com/gustavoguanabara/html-css/tree/fe6653ecdafa5b7275a5ecb4c36a8ca14f5043e7/aulas-pdf
 
 
 
