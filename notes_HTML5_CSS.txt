@@ -20,11 +20,24 @@ required - campo obrigatorio
 minlength="5" maxlength="15" minimo e maximo permitido no campo
 size="15" tamanho caixa
 placeholder="nome" - preencher a caixa com dica da informação
+value="5" autopreencher a caixa com a informação
 autocomplete="username"> - ativar autopreenchimento do tipo do campo correto
 >>autocomplete="current-password"
 >>autocomplete="new-password"
 
  <input type="password" name="sen" id="isen" required minlength="8" maxlength="15">
+input type="number"
+> min  max  - min e max numeros permitidos
+ <input type="number" name="media" id="imedia" required min="0" max="10">
+
+step="0.5" permitir valor fracionado
+
+
+ELEMENTOS FORM
+
+
+
+
 
 
 
