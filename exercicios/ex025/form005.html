@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        fieldset{
+            width:200px;
+        }
+        form{
+
+            padding-left: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Bandas Favoritas</legend>
+            <input type="checkbox" name="Iron" id="iiron"><label for="iiron">Iron Maiden</label><br>
+            <input type="checkbox" name="priest" id="ipriest"><label for="ipriest">Judas Priest</label><br>
+            <input type="checkbox" name="sabbath" id="isabbath"><label for="isabbath">Black Sabbath</label><br>
+            <input type="checkbox" name="accept" id="iaccept"><label for="iaccept">Accept</label><br>
+            <input type="checkbox" name="hello" id="ihello"><label for="ihello">Helloween</label><br>
+
+            
+        </fieldset>
+
+
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

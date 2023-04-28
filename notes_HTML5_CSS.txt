@@ -1,3 +1,129 @@
+28/04/23
+
+
+INPUT FORM COLOR RANGE FILE
+ <input type="color" name="cor" id="icor">
+-seletor de cor
+
+ <input type="range" name="range" id="irange" min="1" max="5" value="5">
+-seletor de nível
+
+
+ <input type="file" name="foto" id="ifoto">
+-envio de arquivos
+
+
+
+OUTRO ELEMENTOS DE FORM = SELECT, TEXTAREA
+SELECT
+
+ <select name="estado" id="iestado">
+   <optgroup label="Região Sudeste"> -- agrupar as opções
+        <option value="RJ">Rio de Janeiro</option>  - opções
+   </optgroup>
+</select>
+
+
+DATALIST
+<input type="text" name="prof" id="iprof" list="lstprof">
+-----caixa de texto normal. está será adicionada no atrubuto a lista de ID "lstprof"
+<datalist id="lstprof">
+	<option value="tk">TikToker</option> - remover VALUE para não aparecer nas opções
+</datalist>
+
+
+ATRIBUTO OUTPUT EM FORMULARIO (PROGRAMAÇÃO)
+
+
+dentro do INPUT do form, função - oninput=""
+JAVASCRIPT
+
+oninput="isoma.innerHTML=Number(in1.value) + Number(in2.value)"
+
+<output name="soma" id="isoma"> 0</output>
+---campo que será atualizado com a soma dos campos
+
+
+OUTPUT não envia os dados do form, apenas exbibe na tela p/ o user
+========================================
+ex
+  <p>
+        <label for="in1">Número 1:</label>
+        <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML=Number(in1.value) + Number(in2.value)">
+    </p>
+    <p>
+        <label for="in2">Número 2:</label>
+        <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML=Number(in1.value)+Number(in2.value)">
+    </p>
+    <p>
+        <label for="isoma">Soma:</label>
+        <output name="soma" id="isoma"> 0</output>
+    </p>
+========================================================
+
+
+
+USO DE OUTPUT COM SCRIPT DE JAVASCRIPT
+<p>
+    <label for="iano">Em que ano você nasceu?</label>
+    <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcIdade()">
+ </p>
+------------->ONINPUT Chama o script calcIdade em <script>
+
+<p>
+    <label for="iidade">Sua Idade é: </label>
+    <output id="iidade">0</output>
+</p>
+--------------->Onde aparecerá o resultado do OUTPUT gerado pelo JAVASCRIPT calcIdade
+
+
+<script>
+    function calcIdade(){
+        let atual= new Date().getFullYear()
+        iidade.innerHTML=Number(atual) - Number(iano.value)
+
+    }
+</script>
+---------------> FUNÇÃO JAVASCRIPT
+
+
+
+
+
+
+
+27/04/23
+MAIS ATRIBUTOS DO INPUT
+
+
+RADIO BUTTON E CHECKBOX
+
+
+ <input type="checkbox" name="banda" id="ibanda">Iron Maiden 
+
+ <input type="checkbox" name="Iron" id="iiron"><label for="iiron">Iron Maiden</label><br>
+>usando label para clicar no nome da opção e marcar 
+
+
+RADIO BUTTON
+<input type="radio" name="masc" id="imasc"><label for="imasc">Masculino</label>
+
+precisa ter o mesmo NOME na variavel para funcionar corretamente
+usar o input VALUE para enviar o dado correspondente ao selecionado
+ex:
+ <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label>
+ <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+
+ex: completo
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+
+        </fieldset>
+
+
+
 26/04/23
 
 
@@ -33,7 +159,18 @@ input type="number"
 step="0.5" permitir valor fracionado
 
 
-ELEMENTOS FORM
+
+BUSCAR MAIS SOBRE EXPRESSOES REGULARES  - REGEX (pattern, regular o formato dos campos do form
+pattern="^[0-9]{4}-[0-9]{4}$"
+
+GRUPO DE CAMPOS / FIELDSET
+
+<fieldset>  - cria uma  borda em volta dos campos do form
+        <legend>Dados Pessoais</legend> -"caption" do fieldset
+</fieldset>
+
+
+ELEMENTOS FORM/INPUT
 
 
 
