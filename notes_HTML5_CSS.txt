@@ -1,11 +1,24 @@
 04/05 cont MEDIA FEATURES BREAKPOINTS
  funcionando exercicio 26 c/ 4 breakpoints distintos
 
+(extra)
+DIFERENÇA ENTRE TAG MENU E NAV
+https://acervolima.com/diferenca-entre-a-tag-nav-e-menu-em-html5/
+
+MENU RESPONSIVO MEDIA QUERY
+
+pesquisar no google icons
+https://fonts.google.com/icons?selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@48
 
 
+.colocar o link na area do head
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 
-
+.inserir o ícone antes do menu
+ 	<span class="material-symbols-outlined">
+            menu
+        </span>
 
 
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <header>
+        <h1>Iron Maiden Collection</h1>
+        <i id="burger" class="material-symbols-outlined" onclick="clickMenu()">
+             menu
+        </i>
+        <menu id="imen">
+            <ul>
+                <li><a href="#">Opção1</a> </li>
+                <li><a href="#">Opção2</a></li>
+                <li><a href="#">Opção3</a></li>
+                <li><a href="#">Opção4</a></li>
+                <li><a href="#">Opção5</a></li>
+            </ul>
+            
+        </menu>
+
+    </header>
+    <main>
+        <article>
+            <h2>testando media queries</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga sed dolorem ut praesentium est hic. Facere necessitatibus, quibusdam sunt id dolore veritatis dignissimos praesentium fuga omnis aut enim harum itaque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus officia quam iure possimus ipsa! Necessitatibus reiciendis, cupiditate dolores alias eum eius hic. Esse dignissimos voluptas quis vero dolore libero eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet sit dolorum beatae iusto accusamus, in obcaecati culpa pariatur eligendi quam? Ipsa eaque laudantium recusandae ipsum perspiciatis, molestias est hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minus, saepe quis, quam fuga corporis quas alias vitae amet perspiciatis eum. Fuga repellat excepturi ea minus eligendi nostrum voluptatibus doloremque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maxime optio aperiam eligendi a, nihil quod harum consequatur enim possimus fuga excepturi voluptatibus deserunt nobis quo recusandae dignissimos? Consequuntur, obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo praesentium fuga? Cum excepturi, doloremque et quasi quidem eum ad culpa aperiam dolorum pariatur repudiandae dolores quod tenetur earum illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum odit voluptatem maiores alias repellat eos aliquid sunt quaerat, sed nisi architecto tenetur? Et voluptates autem odio sit, similique cum? Suscipit?</p>
+
+        </article>
+        
+    </main> 
+    <script>
+
+        function clickMenu(){
+            if (imen.style.display=='block'){
+                imen.style.display='none'
+            }else{
+
+                imen.style.display='block';
+            }
+            
+            
+        }
+    </script>  
+</body>
+</html>
