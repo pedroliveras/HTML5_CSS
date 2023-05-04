@@ -1,3 +1,96 @@
+03/05/23
+cont MEDIA FEATURES
+
+ex:
+    <link rel="stylesheet" href="estilos/style.css" media="all" >
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation:landscape)">
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation:portrait)" >
+
+
+
+
+reunindo media features em um unico CSS(projetos pequenos)
+   <style>
+   @media screen and (orientation:landscape) {
+
+	}
+>>>alem de ser dentro do estilo no HTML, pode ser dentro de um unico css
+
+MOBILE FIRST MEDIA QUERY
+
+
+projeto mobile first
+
+
+DEVICE BREAKPOINTS
+==========================================================================
+Google- Typical Device Breakpoints
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+==========================================================================
+
+ex:
+@media screen and (min-width:768px) and (max-width:992px)  {
+    
+}
+-intervalo de resolução nas breakpoints
+
+
+
+02/05/23
+>>>MEDIA QUERIES
+
+MEDIA TYPES
+
+reprodução do site em diferentes telas de diferentes tamanhos
+
+versão de estilo exclusiva para impressora e para telas diferentes
+
+    <link rel="stylesheet" href="estilo/tela.css" media="screen">
+-tela
+
+   <link rel="stylesheet" href="estilos/impressora.css" media="print">
+-impressora
+
+link estilo CSS do estilo MEDIA QUERY
+
+
+usar DISPLAY :none; para omitir uma parte da pagina no modo de impressão
+
+
+MEDIA FEATURES
+
+opções na CSS definindo os tipos de tela(feature) na função MEDIA
+
+media="screen and(orientation:portrait)
+media="screen and (orientation:landscape)
+
+
+<link rel="stylesheet" href="estilos/style.css" media="all">
+---style global
+
+
+
+
+
+
+
+
+
+
 28/04/23
 
 

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*DEMAIS MEDIAS*/
+@media print {  /*printer*/
+    
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#tv{display: none;}
+    img#pc{display: none;} 
+   
+    main{
+        border:2px solid black;
+    }
+    main h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;  
+    }
+    main::after{
+
+        content:'impressão feita por pedroliveras';
+        color:lightgray;
+        font-size: 0.5em;
+        text-decoration: overline;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px)   { /*tablet*/
+
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#tv{display: none;}
+    img#pc{display: none;} 
+    body{
+        background-image: url('../imagens/back-tablet.jpg'); 
+        background-size: cover;
+        background-position: center center;                
+        
+    }   
+   
+}
+@media screen and (min-width:992px) and (max-width:1200px) { /*pc*/
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#tv{display: none;}
+    img#pc{display: block;}  
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    
+}
+
+@media screen and (min-width:1200px)  { /*tv*/
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#tv{display: block;}
+    img#pc{display: none;} 
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    
+}
